@@ -1,0 +1,12 @@
+
+"Label" : {
+    color : '#5b7fb4',
+    top : 50,
+}
+
+".shapes": {
+    width: 300,
+    height: 300,
+    backgroundColor: "#0c9baa",
+    borderRadius: 150
+}

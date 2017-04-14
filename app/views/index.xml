@@ -1,0 +1,29 @@
+<Alloy>
+	<Window backgroundColor="#eee">
+		<ScrollView height="Ti.UI.FILL" width="Ti.UI.FILL" scrollType="vertical" layout="vertical">
+			<Label text="No borderWidth" />
+			<View class="shapes" />
+
+			<Label text="2dp borderWidth" />
+			<View class="shapes" borderWidth="2" />
+
+			<Label text="Overlay View of more borderWidth" />
+			<View width="Ti.UI.SIZE" height="Ti.UI.SIZE">
+				<View class="shapes" borderWidth="1">
+					<!-- Put your content here -->
+				</View>
+				<View class="shapes" backgroundColor="transparent" borderWidth="2" />
+			</View>
+
+			<Label text="CardView with 0 elevation & cross-module" />
+			<View class="shapes" module='android_ios_ui' />
+
+			<!-- If you do not use above method using module='android_ios_ui',
+			you will need to create 2 different views - 1 for iOS and other for android.
+			it will make you do more tasks when you will have complex & bigger views -->
+			<Label text="CardView with 0 elevation" />
+			<View class="shapes" platform="ios"></View>
+			<CardView class="shapes" elevation='0' platform="android"></CardView>
+		</ScrollView>
+	</Window>
+</Alloy>
